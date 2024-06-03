@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter From Paradise</title>    
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Nav bar - desktop -->
+     <nav class="desktop-only">
+        <ul class="navbar">
+            <li class="nav-logo"><a href="index.html">The McCorry Collection</a></li>
+            <li class="navs"><a href="art.html">Art</a></li>
+            <li class="navs"><a href="pottery.html">Pottery</a></li>
+            <li class="navs"><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"> </a></li>
+        </ul>
+    </nav>
+    
+    <!-- Nav bar - mobile -->
+    <nav class="mobile-only">
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu">
+            <div class="burger-menu">
+                <h3>The McCorry Collection</h3>
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </label>
+        <ul class="navbar">
+            <li><a href="art.html">Art</a></li>
+            <li><a href="pottery.html">Pottery</a></li>
+            <li><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"></a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="product_page">
+        <div>
+            <!-- Product pictures carousel -->
+            <div class="carousel"> <!-- Code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <!-- Product images -->
+                <div class="slideshow fade">
+                    <img src="images/art/a-letter-from-paradise-1.webp"></img>
+                </div>
+                <div class="slideshow fade">
+                    <img src="images/art/a-letter-from-paradise-2.webp"></img>
+                </div>
+
+                 <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+                <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+
+            </div>
+        </div>
+        <div>
+            <!-- Product details -->
+            <div class="product_details">
+                <div>
+                    <p class="details_name">A Letter From Paradise</p>
+                    <p class="details_artist">by Hop Dac</p>
+                    <p class="details_price">$11,000</p>
+                    <ul>
+                        <li>2023</li>
+                        <li>Oil on canvas board</li>
+                        <li>Dimensions: 33x43cm framed</li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- Add to cart button -->
+                    <div class="button_container">
+                        <button class="default_button" onclick="addToCart('A Letter From Paradise', 11000, 'images/art/a-letter-from-paradise-1.webp')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Similar products -->
+    <div class="similar_products">
+        <h3>Similar products</h3>
+        <div class="catalogue">
+            <div>
+                <a href="300-years-went-by.html">
+                    <img src="images/art/300-years-went-by-1.webp"></img>
+                    <p class="product_name">300 Years Went By</p>
+                    <p class="price">$13,500</p>
+                </a>
+            </div>
+            <div>
+                <a href="a-patina-of-time.html">
+                    <img src="images/art/a-patina-of-time-1.webp"></img>
+                    <p class="product_name">A Patina Of Time</p>
+                    <p class="price">$1,500</p>
+                </a>
+            </div>
+            <div>
+                <a href="bin-night.html">
+                    <img src="images/art/bin-night-1.webp"></img>
+                    <p class="product_name">Bin Night</p>
+                    <p class="price">$3,500</p>
+                </a>
+            </div>            
+            <div>
+                <a href="fuchsia-in-a-cup.html">
+                    <img src="images/art/fuchsia-in-a-cup-1.webp"></img>
+                    <p class="product_name">Fuschia In A Cup</p>
+                    <p class="price">$3,000</p>
+                </a>
+            </div>
+            <div>
+                <a href="listen-to-the-children.html">
+                    <img src="images/art/listen-to-the-children-1.webp"></img>
+                    <p class="product_name">Listen To The Children</p>
+                    <p class="price">$4,800</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Loads the script after the html file loads -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+<!-- Footer - desktop -->
+<div class="desktop-only">
+    <footer id="desktop_footer">
+        <div>
+        <h5>HOW CAN WE HELP YOU?</h5>
+        <p>Contact Us</p>
+        <p>My Account</p>
+        <p>FAQs</p>
+        <p>Unsubscribe</p>
+        <p>Payment Plans</p>
+        </div>
+    
+        <div>
+            <h5>ABOUT THE MCCORRY COLLECTION</h5>
+            <p>About Us</p>
+            <p>Privacy & Coookie Policy</p>
+        </div>
+    
+        <div>
+            <h5>SIGN UP TO OUR NEWSLETTER</h5>
+            <input type="text" placeholder="Email">
+            <h4>LANGUAGE</h4>
+            <p>English</p>
+            <h4>CURRENCY</h4>
+            <p>$ AUD</p>
+            <h6>FOLLOW US</h6>
+        </div>
+    
+        <div>
+            <h1> The McCorrry Collection</h1>
+            <h2> COPYRIGHT C THE MCCORRY COLLECTION LTD. ALL RIGHTS RESERVED</h2>
+        </div>
+        </footer>
+    </div>
+
+    <!-- Footer - mobile -->
+    <div class="mobile-only">
+        <footer id="mobile_footer">
+            <div id="newsletter">
+                <h5>SIGN UP TO OUR NEWSLETTER</h5>
+                <p>By entering your email address, you consent to receiving our newsletter. More details can be found in our <span>Privacy Policy</span></p>
+                <input type="text" placeholder="Email">
+            </div>
+        
+            <div>
+                <h5>HOW CAN WE HELP YOU</h5>
+                <p>Contact Us</p>
+                <p>My Account</p>
+                <p>FAQs</p>
+                <p>Unsubscribe</p>
+                <p>Payment Plans</p>
+            </div>
+        
+            <div>
+                <h5>ABOUT THE MCCORRY COLLECTION</h5>
+                <p>About Us</p>
+                <p>Privacy & Coookie Policy</p>
+            </div>
+    
+            <div>
+                <h4>LANGUAGE</h4>
+                <p>English</p>
+            </div>
+    
+            <div>
+                <h4>CURRENCY</h4>
+                <p>$ AUD</p>
+            </div>
+    
+            <div>
+                <h5>FOLLOW US</h5>
+                
+            </div>
+        </footer>
+    </div>
+</html>

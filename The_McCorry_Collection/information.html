@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Nav bar - desktop -->
+    <nav class="desktop-only">
+        <ul class="navbar">
+            <li class="nav-logo"><a href="index.html">The McCorry Collection</a></li>
+            <li class="navs"><a href="art.html">Art</a></li>
+            <li class="navs"><a href="pottery.html">Pottery</a></li>
+            <li class="navs"><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"> </a></li>
+        </ul>
+    </nav>
+    
+    <!-- Nav bar - mobile -->
+    <nav class="mobile-only">
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu">
+            <div class="burger-menu">
+                <h3>The McCorry Collection</h3>
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </label>
+        <ul class="navbar">
+            <li><a href="art.html">Art</a></li>
+            <li><a href="pottery.html">Pottery</a></li>
+            <li><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Timeling showing checkout process progress -->
+    <div class="checkout">
+        <div class="checkout_processes">
+            <div class="checkout_process_done"><div class="check"></div></div>
+            CART
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">2</div>
+            INFORMATION
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">3</div>
+            SHIPPING
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">4</div>
+            PAYMENT
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">5</div>
+            COMPLETE
+        </div>
+    </div>
+
+    <!-- Form to gather user's personal information for purchase -->
+    <div class="basiclayout">
+        <div id="information_page">
+            <div class="contact column">
+                <h1>Contact</h1>
+                <input type="text" class="info" placeholder="Email">
+            </div>
+            <div class="shipping_address">
+                <h1>Shipping address</h1>
+                <div class="column">
+                    <input type="text" class="info" placeholder="First name">
+                    <input type="text" class="info" placeholder="Last name">
+                    <input type="text" class="info" placeholder="Company">
+                    <input type="text" class="info" placeholder="Street">
+                    <input type="text" class="info" placeholder="Apartment, suite, etc.">
+                    <input type="text" class="info" placeholder="Suburb">
+                    <input type="text" class="info" placeholder="State/ territory">
+                    <input type="text" class="info" placeholder="Postcode">
+                    <input type="text" class="info" placeholder="Phone (optional)">
+                </div>
+            </div>
+
+        </div>
+        <!-- Buttons to proceed further or go back in the checkout process -->
+        <div class="checkout_button_container">
+            <button class="checkout_buttons" onclick= "window.location.href = 'shipping-method.html';">Continue to shipping</button>
+            <button class="checkout_buttons_reverse" onclick= "window.location.href = 'shopping-cart.html';">Return to cart</button>
+        </div>
+    </div>
+
+    
+</body>
+
+<!-- Footer - desktop -->
+<div class="desktop-only">
+    <footer id="desktop_footer">
+        <div>
+        <h5>HOW CAN WE HELP YOU?</h5>
+        <p>Contact Us</p>
+        <p>My Account</p>
+        <p>FAQs</p>
+        <p>Unsubscribe</p>
+        <p>Payment Plans</p>
+        </div>
+    
+        <div>
+            <h5>ABOUT THE MCCORRY COLLECTION</h5>
+            <p>About Us</p>
+            <p>Privacy & Coookie Policy</p>
+        </div>
+    
+        <div>
+            <h5>SIGN UP TO OUR NEWSLETTER</h5>
+            <input type="text" placeholder="Email">
+            <h4>LANGUAGE</h4>
+            <p>English</p>
+            <h4>CURRENCY</h4>
+            <p>$ AUD</p>
+            <h6>FOLLOW US</h6>
+        </div>
+    
+        <div>
+            <h1> The McCorrry Collection</h1>
+            <h2> COPYRIGHT C THE MCCORRY COLLECTION LTD. ALL RIGHTS RESERVED</h2>
+        </div>
+        </footer>
+    </div>
+
+    <!-- Footer - mobile -->
+    <div class="mobile-only">
+        <footer id="mobile_footer">
+            <div id="newsletter">
+                <h5>SIGN UP TO OUR NEWSLETTER</h5>
+                <p>By entering your email address, you consent to receiving our newsletter. More details can be found in our <span>Privacy Policy</span></p>
+                <input type="text" placeholder="Email">
+            </div>
+        
+            <div>
+                <h5>HOW CAN WE HELP YOU</h5>
+                <p>Contact Us</p>
+                <p>My Account</p>
+                <p>FAQs</p>
+                <p>Unsubscribe</p>
+                <p>Payment Plans</p>
+            </div>
+        
+            <div>
+                <h5>ABOUT THE MCCORRY COLLECTION</h5>
+                <p>About Us</p>
+                <p>Privacy & Coookie Policy</p>
+            </div>
+    
+            <div>
+                <h4>LANGUAGE</h4>
+                <p>English</p>
+            </div>
+    
+            <div>
+                <h4>CURRENCY</h4>
+                <p>$ AUD</p>
+            </div>
+    
+            <div>
+                <h5>FOLLOW US</h5>
+                
+            </div>
+        </footer>
+    </div>
+
+
+</html>
