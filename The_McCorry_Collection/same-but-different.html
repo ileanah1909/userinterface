@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same But Different</title>    
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav bar - desktop -->
+    <nav class="desktop-only">
+        <ul class="navbar">
+            <li class="nav-logo"><a href="index.html">The McCorry Collection</a></li>
+            <li class="navs"><a href="art.html">Art</a></li>
+            <li class="navs"><a href="pottery.html">Pottery</a></li>
+            <li class="navs"><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"> </a></li>
+        </ul>
+    </nav>
+    
+    <!-- Nav bar - mobile -->
+    <nav class="mobile-only">
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu">
+            <div class="burger-menu">
+                <h3>The McCorry Collection</h3>
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </label>
+        <ul class="navbar">
+            <li><a href="art.html">Art</a></li>
+            <li><a href="pottery.html">Pottery</a></li>
+            <li><a href="emporium.html">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href="shopping-cart.html"><img src="images/shopping-bag.svg"></a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="product_page">
+        <div>
+            <!-- Product pictures carousel -->
+            <div class="carousel"> <!-- Code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <!-- Product images -->
+                <div class="slideshow fade">
+                    <img src="images/emporium/same-but-different-1.webp"></img>
+                </div>
+                <div class="slideshow fade">
+                    <img src="images/emporium/same-but-different-2.webp"></img>
+                </div>
+
+                 <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+                <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </div>
+        <div>
+            <!-- Product details -->
+            <div class="product_details">
+                <div>
+                    <p class="details_name">Same But Different</p>
+                    <p class="details_price">$700</p>
+                    <ul>
+                        <li>2021</li>
+                        <li>Glazed earthenware</li>
+                        <li>Size: 25x12.5x12.5cmm</li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- Add to cart button -->
+                    <div class="button_container">
+                        <button class="default_button" onclick="addToCart('Same But Different', 700, 'images/emporium/same-but-different-1')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Similar products -->
+    <div class="similar_products">
+        <h3>Similar products</h3>
+        <div class="catalogue">
+            <div>
+                <a href="be-good-or-be-gone.html">
+                    <img src="images/emporium/be-good-or-be-gone-1.webp"></img>
+                    <p class="product_name">Be Good Or Be Gone</p>
+                    <p class="price">$500</p>
+                </a>
+            </div>
+            <div>
+                <a href="child-song.html">
+                    <img src="images/emporium/child-song-1.webp"></img>
+                    <p class="product_name">Child Song</p>
+                    <p class="price">$750</p>
+                </a>
+            </div>
+            <div>
+                <a href="constant-knot.html">
+                    <img src="images/emporium/constant-knot-1.webp"></img>
+                    <p class="product_name">Constant Knot</p>
+                    <p class="price">$650</p>
+                </a>
+            </div>            
+            <div>
+                <a href="dangling-conversations.html">
+                    <img src="images/emporium/dangling-conversations-1.webp"></img>
+                    <p class="product_name">Dangling Conversations</p>
+                    <p class="price">$1,250</p>
+                </a>
+            </div>
+            <div>
+                <a href="easy-target.html">
+                    <img src="images/emporium/easy-target-1.webp"></img>
+                    <p class="product_name">Easy Target</p>
+                    <p class="price">$750</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Loads the script after the html file loads -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+<!-- Footer - desktop -->
+<div class="desktop-only">
+    <footer id="desktop_footer">
+        <div>
+        <h5>HOW CAN WE HELP YOU?</h5>
+        <p>Contact Us</p>
+        <p>My Account</p>
+        <p>FAQs</p>
+        <p>Unsubscribe</p>
+        <p>Payment Plans</p>
+        </div>
+    
+        <div>
+            <h5>ABOUT THE MCCORRY COLLECTION</h5>
+            <p>About Us</p>
+            <p>Privacy & Coookie Policy</p>
+        </div>
+    
+        <div>
+            <h5>SIGN UP TO OUR NEWSLETTER</h5>
+            <input type="text" placeholder="Email">
+            <h4>LANGUAGE</h4>
+            <p>English</p>
+            <h4>CURRENCY</h4>
+            <p>$ AUD</p>
+            <h6>FOLLOW US</h6>
+        </div>
+    
+        <div>
+            <h1> The McCorrry Collection</h1>
+            <h2> COPYRIGHT C THE MCCORRY COLLECTION LTD. ALL RIGHTS RESERVED</h2>
+        </div>
+        </footer>
+    </div>
+    
+    <!-- Footer - mobile -->
+    <div class="mobile-only">
+        <footer id="mobile_footer">
+            <div id="newsletter">
+                <h5>SIGN UP TO OUR NEWSLETTER</h5>
+                <p>By entering your email address, you consent to receiving our newsletter. More details can be found in our <span>Privacy Policy</span></p>
+                <input type="text" placeholder="Email">
+            </div>
+        
+            <div>
+                <h5>HOW CAN WE HELP YOU</h5>
+                <p>Contact Us</p>
+                <p>My Account</p>
+                <p>FAQs</p>
+                <p>Unsubscribe</p>
+                <p>Payment Plans</p>
+            </div>
+        
+            <div>
+                <h5>ABOUT THE MCCORRY COLLECTION</h5>
+                <p>About Us</p>
+                <p>Privacy & Coookie Policy</p>
+            </div>
+    
+            <div>
+                <h4>LANGUAGE</h4>
+                <p>English</p>
+            </div>
+    
+            <div>
+                <h4>CURRENCY</h4>
+                <p>$ AUD</p>
+            </div>
+    
+            <div>
+                <h5>FOLLOW US</h5>
+                
+            </div>
+        </footer>
+    </div>
+</html>
